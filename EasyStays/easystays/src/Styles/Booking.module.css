@@ -1,0 +1,61 @@
+.bookingContainer {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bookingField {
+    margin: 15px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.bookingField label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.bookingField input[type="date"],
+.bookingField select,
+.bookingField input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background: rgba(255, 255, 255, 1.5);
+}
+
+.bookingField input[type="date"]:focus,
+.bookingField select:focus,
+.bookingField input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.bookingField button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.bookingField button:hover {
+    background-color: #0056b3;
+}

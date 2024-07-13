@@ -1,0 +1,12 @@
+.bg-image {
+    background-image: url('../assets/a.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+  }
+  

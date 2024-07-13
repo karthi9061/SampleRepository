@@ -1,0 +1,72 @@
+body {
+   padding: 0;
+   margin: 0;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000; 
+}
+
+.contact-info, .nav-links, .user-actions {
+    display: flex;
+    align-items: center;
+}
+.contact-info span, .nav-links a, .user-actions a, .user-actions button {
+    margin-right: 1.5rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-info i, .nav-links a:hover, .user-actions a:hover, .user-actions button:hover {
+    color: gray;
+}
+.logo img {
+    height: 2rem;
+}
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.user-actions a, .user-actions button {
+    font-size: 0.9rem;
+}
+
+.book-now {
+    background-color: #ffc107;
+    color: black;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+    text-align: center;
+}
+.main h1 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+
+.user-actions .profile-icon {
+    margin-right: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
