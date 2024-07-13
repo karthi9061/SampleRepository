@@ -4,6 +4,7 @@
     background: rgba(255, 255, 255, 0.2);
     padding: 30px;
     border-radius: 10px;
+    max-width: 70vw;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
@@ -20,12 +21,18 @@
     display: block;
     margin-bottom: 10px;
     font-weight: 600;
-    color: #000000;
+    color: #ffffff; 
+    font-size: 18px;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+    transition: color 0.3s; 
+    text-shadow: 2px 1px 2px rgba(10, 10, 10, 3.1);
+    font-family: 'Arial', sans-serif; 
 }
-
 .bookingField input[type="date"],
 .bookingField select,
-.bookingField input[type="text"] {
+.bookingField input[type="text"],
+.bookingField input[type="search"] {
     width: 100%;
     padding: 10px;
     border: 2px solid #ddd;
@@ -38,13 +45,14 @@
 
 .bookingField input[type="date"]:focus,
 .bookingField select:focus,
-.bookingField input[type="text"]:focus {
+.bookingField input[type="text"]:focus,
+.bookingField input[type="search"] {
     border-color: #007bff;
     outline: none;
 }
 
 .bookingField button {
-    width: 100%;
+    width: 200px;
     padding: 12px;
     background-color: #007bff;
     color: #fff;
@@ -54,8 +62,49 @@
     font-size: 18px;
     font-weight: 600;
     transition: background-color 0.3s;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookingField button i {
+    margin-right: 8px;
 }
 
 .bookingField button:hover {
     background-color: #0056b3;
+}
+
+.starRating {
+    display: flex;
+}
+
+.star {
+    font-size: 40px;
+    cursor: pointer;
+    color: #ddd;
+    transition: color 0.3s;
+}
+
+.star.filled {
+    color: #ffbf00;
+    animation: pulse 1s infinite;
+}
+
+.star:hover,
+.star.filled:hover {
+    color: #ff8000;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
